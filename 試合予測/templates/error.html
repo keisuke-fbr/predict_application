@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>エラー</h2>
+    <p>入力に誤りが生じてます</p>
+    <p>正しい表記で入力してください</p>
+
+    <div class="error_point">
+        {% for i in judge %}
+        <p>・{{i}}</p>
+        {% endfor %}
+    </div>
+
+    <a href="/">戻る</a>
+    
+</body>
+</html>

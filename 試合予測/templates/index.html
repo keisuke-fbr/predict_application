@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+        <link rel="stylesheet" href="../static/css/index.css">
+        <title>試合予測</title>
+    </head>
+    <body>
+        
+
+        <header>
+
+        </header>
+
+        
+
+        <div class="enter_btn">
+            
+            <h1>データを入力してください</h1>
+            <form action = "/predict" method="post" enctype="multipart/form-data">
+
+                <div class = "when" >
+                    
+                    <h3>第何節</h3>
+                    <p>半角数字で入力</p>
+                    <input type="text" name = "input_data0" multiple="multiple" class="input_when"required>
+                </div>
+                
+                
+                <div class = "team" >
+                    <h3>チーム</h3>
+                    <div class="teamtable">
+                        <P>各チームと入力表記</P>
+                        <table border="1">
+                            <tr>
+                                <th>チーム</th><th>書き方</th><th>チーム</th><th>書き方</th><th>チーム</th><th>書き方</th><th>チーム</th><th>書き方</th><th>チーム</th><th>書き方</th><th>チーム</th><th>書き方</th><th>チーム</th><th>書き方</th>
+                            </tr>
+                            <tr>
+                                <td>川崎フロンターレ</td><td>川崎F</td><td>横浜Fマリノス</td><td>横浜FM</td><td>FC東京</td><td>FC東京</td><td>ガンバ大阪</td><td>G大阪</td><td>鹿島アントラーズ</td><td>鹿島</td><td>京都サンガ</td><td>京都</td><td>浦和レッズ</td><td>浦和</td>
+                            </tr>
+                            <tr>
+                                <td>サンフレッチェ広島</td><td>広島</td><td>サガン鳥栖</td><td>鳥栖</td><td>清水エスパルス</td><td>清水</td><td>コンサドーレ札幌</td><td>札幌</td><td>セレッソ大阪</td><td>C大阪</td><td>アビスパ福岡</td><td>福岡</td><td>ジュビロ磐田</td><td>磐田</td>
+                            </tr>
+                            <tr>
+                                <td>湘南ベルマーレ</td><td>湘南</td><td>柏レイソル</td><td>柏</td><td>名古屋グランパス</td><td>名古屋</td><td>ヴィッセル神戸</td><td>神戸</td><td>横浜FC</td><td>横浜FC</td><td>大分トリニータ</td><td>大分</td><td>徳島ヴォルティス</td><td>徳島</td>
+                            </tr>
+                            <tr>
+                                <td>ベガルタ仙台</td><td>仙台</td><td>松本山雅</td><td>松本</td><td>Vファーレン長崎</td><td>長崎</td><td>アルビレックス新潟</td><td>新潟</td><td>大宮アルディージャ</td><td>大宮</td><td>ヴァンフォーレ甲府</td><td>甲府</td><td>モンテディオ山形</td><td>山形</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <h3>ホーム</h3>
+                    <input type="text" name = "input_data1" multiple="multiple" class="input"required>
+                    <h3>アウェイ</h3>
+                    <input type="text" name = "input_data2" multiple="multiple" class="input_ateam"required>
+                </div>
+
+                <div class="weather">
+                    <h3>天気</h3>
+                    <div class = weathertable>
+                        <table border="1">
+                            <tr>
+                                <th>天気</th><th>書き方</th>
+                            </tr>
+                            <tr>
+                                <td>晴れ</td><td>晴</td>
+                            </tr>
+                            <tr>
+                                <td>曇</td><td>曇</td>
+                            </tr>
+                            <tr>
+                                <td>雨</td><td>雨</td>
+                            </tr>
+                            <tr>
+                                <td>室内</td><td>室内</td>
+                            </tr>
+                            <tr>
+                                <td>その他</td><td>霙など</td>
+                            </tr>
+    
+                        </table>
+    
+                    </div>
+    
+                    <input type="text" name = "input_data3" multiple="multiple" class="input"required>
+                </div>
+
+                <div class="humid">
+                    <h3>湿度</h3>
+                    <p>半角数字で入力</p>
+                    <input type="text" name = "input_data4" multiple="multiple" class="input"required>
+                </div>
+
+                <div class="tempreture">
+                    <h3>気温</h3>
+                    <p>半角数字で入力</p>
+                    <p><input type="text" name = "input_data5" multiple="multiple" class="input"required></p>
+                </div>
+
+                
+                
+                <p><input type="submit" value="試合予測" class="form-control btn btn-primary"required></p>
+                
+            </form>
+        </div>
+        
+        <footer>
+            <small>© 2023 小山 佳祐</small>
+        </footer>
+        
+        
+    </body>
+</html> 
+
+
+
+
+

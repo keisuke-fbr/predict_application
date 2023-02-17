@@ -1,0 +1,54 @@
+header{
+    height: 60px;
+    background-color: rgb(62, 191, 62);
+}
+
+h1{
+    margin-left: 1%;
+}
+
+.when{
+    margin-left: 2%;
+}
+
+.input_when{
+    margin-bottom: 5%;
+}
+
+.team{
+    margin-left: 2%;
+}
+
+.input_ateam{
+    margin-bottom: 5%;
+    
+}
+
+.weather{
+    margin-left: 2%;
+}
+
+.weathertable{
+    margin-bottom: 2%;
+}
+
+.humid{
+    margin-left: 2%;
+}
+
+.tempreture{
+    margin-left: 2%;
+}
+
+footer{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(62, 191, 62);
+    height: 50px;
+    
+    font-size: 15px;
+    color: #fff
+    
+}
